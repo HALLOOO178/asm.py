@@ -9,7 +9,7 @@ class EmulatorApp:
     def __init__(self, root, emulator):
         self.root = root
         self.emulator = emulator
-        self.root.title("Nova")
+        self.root.title("Asm.py")
 
         self.text = tk.Text(root, wrap='word', bg='black', fg='white', insertbackground='white')
         self.text.pack(expand=1, fill='both')
