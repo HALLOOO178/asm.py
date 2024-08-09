@@ -51,7 +51,7 @@ class SimpleEmulator:
                 ip += 2
             elif opcode == 0xF4:  # halt
                 self.running = False
-            elif opcode == 0x00:  # nop
+            elif opcode == 0x00 or opcode == 0x30:  # nop
                 ip += 1
             else:
                 if self.output_callback:
